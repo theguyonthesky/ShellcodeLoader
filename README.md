@@ -34,7 +34,9 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 - ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
 - ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
 
-## ShellCode Loader
+# How to Run
+1. Clone or download this repository
+2. ## ShellCode Loader
 ## 1. Dependencies:
 - Ensure the target system has the necessary Windows libraries for API calls.
 - A suitable C++ compiler.
