@@ -12,10 +12,6 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 - Memory Injection – Allocates memory and executes the decrypted payload via a new thread.
 - YARA Rule: A tailored YARA rule developed to identify the instances and usage of the shellcode loader by targeting strings and patterns indicative of cryptographic and memory manipulation API calls.
   
-# File Descriptions
-- ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
-- ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
-  
 # How It Works
 1. AES-encrypted shellcode and a decryption key are embedded in the loader.
 
@@ -26,6 +22,17 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 4. The decrypted shellcode is injected into memory and executed, bypassing Windows Defender due to the use of dynamic API resolution and encryption.
 
 5. A YARA rule can be used to scan systems for artifacts of the loader.
+
+# Tools and Technologies Used
+- C++ – Main programming language
+
+- Windows API – For memory allocation, cryptographic operations (including AES decryption using CryptAcquireContext, CryptDeriveKey, etc.), and process/thread management
+
+- YARA – For writing and testing custom detection rules
+
+# Files
+- ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
+- ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
 
 ## ShellCode Loader
 ## 1. Dependencies:
