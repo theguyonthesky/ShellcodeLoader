@@ -28,6 +28,8 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 
 - Windows API – For memory allocation, cryptographic operations (including AES decryption using `CryptAcquireContext`, `CryptDeriveKey`, etc.), and process/thread management
 
+- Havoc C2 – A lightweight post-exploitation command and control framework, used alongside this loader to manage compromised machines
+
 - YARA – For writing and testing custom detection rules
 
 # Files
