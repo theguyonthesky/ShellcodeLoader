@@ -39,7 +39,6 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 2. Set up dependencies and compile
     - ## Shellcode Loader
     - Dependencies: Requires a C++ compiler (e.g., MinGW, Visual Studio)
-- Ensure the target system has the necessary Windows libraries for API calls.
     - Compilation: Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit) with: g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32
   
     - ## YARA Rule
@@ -53,4 +52,4 @@ While the shellcode loader and associated materials have been developed with res
 Contributions, feedback, and issues can be submitted via the GitHub repository. Ensure that your interactions adhere to the GitHub Community Guidelines to maintain a respectful and collaborative environment.
 
 ## License
-MIT License - Refer to the LICENSE file in the repository.
+This project is licensed under the MIT License. Feel free to use or modify it for personal use or learning.
