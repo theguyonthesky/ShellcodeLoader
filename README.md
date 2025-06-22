@@ -17,7 +17,7 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 
 2. Windows Crypto API is used to decrypt the payload in memory.
 
-3. The loader dynamically resolves functions like VirtualAlloc, CreateThread, and CryptAcquireContext to evade static detection.
+3. The loader dynamically resolves functions like `VirtualAlloc`, `CreateThread`, and `CryptAcquireContext` to evade static detection.
 
 4. The decrypted shellcode is injected into memory and executed, bypassing Windows Defender due to the use of dynamic API resolution and encryption.
 
@@ -31,15 +31,15 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 - YARA – For writing and testing custom detection rules
 
 # Files
-- ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
-- ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
+- `ShellCodeLoader.cpp`: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
+- `ShellCodeYara.yara`: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
 
 # How to Run
 1. Clone or download this repository
 2. Set up dependencies and compile
     - ## Shellcode Loader
     - Dependencies: Requires a C++ compiler (e.g., MinGW, Visual Studio)
-    - Compilation: Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit) with: <br>g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32 <br>Or use the Run button in your IDE (e.g., Visual Studio) to compile and run the program.
+    - Compilation: Compile `ShellCodeLoader.cpp` using a C++ compiler targeting the intended architecture (32/64 bit) with: <br>g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32 <br>Or use the Run button in your IDE (e.g., Visual Studio) to compile and run the program.
   
     - ## YARA Rule
     - Dependencies: Install YARA: Refer to the official YARA documentation for installation and usage details.
