@@ -39,7 +39,7 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 2. Set up dependencies and compile
     - ## Shellcode Loader
     - Dependencies: Requires a C++ compiler (e.g., MinGW, Visual Studio)
-    - Compilation: Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit) with: g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32
+    - Compilation: Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit) with: <br>g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32 <br>Or use the Run button in your IDE (e.g., Visual Studio) to compile and run the program.
   
     - ## YARA Rule
     - Dependencies: Install YARA: Refer to the official YARA documentation for installation and usage details.
