@@ -26,7 +26,7 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 # Tools and Technologies Used
 - C++ – Main programming language
 
-- Windows API – For memory allocation, cryptographic operations (including AES decryption using CryptAcquireContext, CryptDeriveKey, etc.), and process/thread management
+- Windows API – For memory allocation, cryptographic operations (including AES decryption using `CryptAcquireContext`, `CryptDeriveKey`, etc.), and process/thread management
 
 - YARA – For writing and testing custom detection rules
 
