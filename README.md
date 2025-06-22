@@ -1,4 +1,4 @@
-# Shellcode Loader
+# Shellcode Loader 💀
 
 # Overview
 The Shellcode Loader project demonstrates the process of loading and executing a shell in the target machine discreetly, utilizing a meticulously crafted C++ script. In conjunction with leveraging the potent Havoc C2 for post-exploitation command and control activities, the project accentuates a keen emphasis on maintaining a stealthy operational profile by employing dynamically resolved Windows API functions and AES decryption.
