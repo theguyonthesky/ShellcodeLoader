@@ -52,7 +52,7 @@ While the shellcode loader and associated materials have been developed with res
 
 ## Contribution & Feedback
 Contributions, feedback, and issues can be submitted via the GitHub repository. Ensure that your interactions adhere to the GitHub Community Guidelines to maintain a respectful and collaborative environment.
-<br>**Stay safe and have fun! 😊**
 
 ## License
 This project is licensed under the MIT License. Feel free to use or modify it for personal use or learning.
+<br>**Stay safe and have fun! 😊**
