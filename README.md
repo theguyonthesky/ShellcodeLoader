@@ -36,19 +36,15 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 
 # How to Run
 1. Clone or download this repository
-2. ## ShellCode Loader
-## 1. Dependencies:
+2. Set up dependencies and compile
+    - ## Shellcode Loader
+    - Dependencies: Requires a C++ compiler (e.g., MinGW, Visual Studio)
 - Ensure the target system has the necessary Windows libraries for API calls.
-- A suitable C++ compiler.
-## 2. Compilation:
-- Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit).
+    - Compilation: Compile ShellCodeLoader.cpp using a C++ compiler targeting the intended architecture (32/64 bit) with: g++ ShellCodeLoader.cpp -o ShellCodeLoader.exe -lcrypt32 -ladvapi32
   
-## YARA Rule
-## 1. Dependencies:
-- Install YARA: Refer to the official YARA documentation for installation and usage details.
-## 2. Usage:
-- Utilize ShellCodeYara.yara to scan files or memory for indications of the shellcode loader using:
-yara -r ShellCodeYara.yara [directory or file to scan]
+    - ## YARA Rule
+    - Dependencies: Install YARA: Refer to the official YARA documentation for installation and usage details.
+    - Usage: Utilize ShellCodeYara.yara to scan files or memory for indications of the shellcode loader using: yara -r ShellCodeYara.yara [directory or file to scan]
 
 ## Disclaimer
 While the shellcode loader and associated materials have been developed with research and educational objectives, the ethical and legal implications of its use are dependent upon user discretion. Ensure adherence to laws and guidelines relevant to your jurisdiction and organizational policies.
