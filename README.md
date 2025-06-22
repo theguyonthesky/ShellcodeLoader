@@ -1,21 +1,21 @@
 # Shellcode Loader
 
-## Overview
+# Overview
 The Shellcode Loader project demonstrates the process of loading and executing a shell in the target machine discreetly, utilizing a meticulously crafted C++ script. In conjunction with leveraging the potent Havoc C2 for post-exploitation command and control activities, the project accentuates a keen emphasis on maintaining a stealthy operational profile by employing dynamically resolved Windows API functions and AES decryption.
 
-## Note
+# Note
 - Security and Ethical Notice: The information and code provided in this repository are meant for educational and research purposes only. Do not use the provided code and techniques for illegal activities.
   
-## Features
+# Features
 - Dynamic Windows API Calls: Implements dynamic resolution of critical Windows API functions to facilitate stealthy memory allocation and shellcode execution.
 - AES Decryption: Leverages Windows Cryptography API for decrypting AES-encrypted shellcode just before its execution, obfuscating its presence in memory and thereby mitigating certain detection vectors.
 - YARA Rule: A tailored YARA rule developed to identify the instances and usage of the shellcode loader by targeting strings and patterns indicative of cryptographic and memory manipulation API calls.
   
-## File Descriptions
+# File Descriptions
 - ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
 - ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
   
-## How to Use
+# How to Use
 
 ## ShellCode Loader
 ## 1. Dependencies:
