@@ -16,7 +16,16 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 - ShellCodeLoader.cpp: Contains the C++ code for the shellcode loader, involving dynamic API call resolution, AES decryption, and shellcode execution in a newly allocated memory region. Please reference this file for a detailed code walkthrough.
 - ShellCodeYara.yara: A YARA rule designed to detect the presence or usage of the provided shellcode loader in analyzed files or memory, targeting API calls and characteristic strings.
   
-# How to Use
+# How It Works
+1. AES-encrypted shellcode and a decryption key are embedded in the loader.
+
+2. Windows Crypto API is used to decrypt the payload in memory.
+
+3. The loader dynamically resolves functions like VirtualAlloc, CreateThread, and CryptAcquireContext to evade static detection.
+
+4. The decrypted shellcode is injected into memory and executed, bypassing Windows Defender due to the use of dynamic API resolution and encryption.
+
+5. A YARA rule can be used to scan systems for artifacts of the loader.
 
 ## ShellCode Loader
 ## 1. Dependencies:
