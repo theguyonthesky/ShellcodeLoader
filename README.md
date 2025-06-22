@@ -9,6 +9,7 @@ The Shellcode Loader project demonstrates the process of loading and executing a
 # Features
 - Dynamic Windows API Calls: Implements dynamic resolution of critical Windows API functions to facilitate stealthy memory allocation and shellcode execution.
 - AES Decryption: Leverages Windows Cryptography API for decrypting AES-encrypted shellcode just before its execution, obfuscating its presence in memory and thereby mitigating certain detection vectors.
+- Memory Injection – Allocates memory and executes the decrypted payload via a new thread.
 - YARA Rule: A tailored YARA rule developed to identify the instances and usage of the shellcode loader by targeting strings and patterns indicative of cryptographic and memory manipulation API calls.
   
 # File Descriptions
